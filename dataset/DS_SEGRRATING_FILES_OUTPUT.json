@@ -1,10 +1,6 @@
 {
 	"name": "DS_SEGRRATING_FILES_OUTPUT",
 	"properties": {
-		"linkedServiceName": {
-			"referenceName": "LS_SEGRAGATING_FILES_OUTPUT",
-			"type": "LinkedServiceReference"
-		},
 		"annotations": [],
 		"type": "Parquet",
 		"typeProperties": {

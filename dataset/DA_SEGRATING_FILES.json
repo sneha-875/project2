@@ -1,10 +1,6 @@
 {
 	"name": "DA_SEGRATING_FILES",
 	"properties": {
-		"linkedServiceName": {
-			"referenceName": "LS_SEGRAGATING_FILES",
-			"type": "LinkedServiceReference"
-		},
 		"parameters": {
 			"filename": {
 				"type": "string"
