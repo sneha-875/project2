@@ -1,0 +1,9 @@
+{
+	"name": "adfdevonee",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "7f8b84c7-03fa-4109-bfc8-b725f4aa811f",
+		"tenantId": "18bb4a2f-3656-4408-ba29-8e020b096e78"
+	}
+}

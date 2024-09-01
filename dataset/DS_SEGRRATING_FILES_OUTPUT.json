@@ -1,0 +1,21 @@
+{
+	"name": "DS_SEGRRATING_FILES_OUTPUT",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SEGRAGATING_FILES_OUTPUT",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "parquet-files",
+				"fileSystem": "adf-p-segrating-files-output"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
