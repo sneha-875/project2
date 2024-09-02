@@ -8,14 +8,29 @@
 		"LS_BLOB_TO_ADLS_OUTPUT_connectionString": {
 			"value": ""
 		},
+		"LS_MANUAL_FILE_ADLS_TO_PARQ_accountKey": {
+			"value": ""
+		},
+		"LS_MANUAL_FILE_ADLS_TO_PARQ_OUTPUT_accountKey": {
+			"value": ""
+		},
 		"LS_REST_APT_TO_PARQ_accountKey": {
 			"value": ""
+		},
+		"LS_MANUAL_FILE_ADLS_TO_PARQ_properties_typeProperties_url": {
+			"value": "https://rawadlsone.dfs.core.windows.net/"
+		},
+		"LS_MANUAL_FILE_ADLS_TO_PARQ_OUTPUT_properties_typeProperties_url": {
+			"value": "https://siadlslayerfinallayer.dfs.core.windows.net/"
 		},
 		"LS_REST_API_TO_PARQ_properties_typeProperties_url": {
 			"value": "https://retoolapi.dev/dyNsBr/data"
 		},
 		"LS_REST_APT_TO_PARQ_properties_typeProperties_url": {
 			"value": "https://siadlslayerfinallayer.dfs.core.windows.net/"
+		},
+		"EVT_MANUAL_FILE_ADLS_TO_PARQ_OUTPUT_properties_typeProperties_scope": {
+			"value": "/subscriptions/fe99f6bb-9115-4d42-a813-a4d0f6c388bf/resourceGroups/practise-res-gp-1/providers/Microsoft.Storage/storageAccounts/rawadlsone"
 		}
 	}
 }

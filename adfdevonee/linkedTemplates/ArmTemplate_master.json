@@ -11,9 +11,25 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'LS_BLOB_TO_ADLS_OUTPUT'"
 		},
+		"LS_MANUAL_FILE_ADLS_TO_PARQ_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_MANUAL_FILE_ADLS_TO_PARQ'"
+		},
+		"LS_MANUAL_FILE_ADLS_TO_PARQ_OUTPUT_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_MANUAL_FILE_ADLS_TO_PARQ_OUTPUT'"
+		},
 		"LS_REST_APT_TO_PARQ_accountKey": {
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'LS_REST_APT_TO_PARQ'"
+		},
+		"LS_MANUAL_FILE_ADLS_TO_PARQ_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://rawadlsone.dfs.core.windows.net/"
+		},
+		"LS_MANUAL_FILE_ADLS_TO_PARQ_OUTPUT_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://siadlslayerfinallayer.dfs.core.windows.net/"
 		},
 		"LS_REST_API_TO_PARQ_properties_typeProperties_url": {
 			"type": "string",
@@ -22,6 +38,10 @@
 		"LS_REST_APT_TO_PARQ_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://siadlslayerfinallayer.dfs.core.windows.net/"
+		},
+		"EVT_MANUAL_FILE_ADLS_TO_PARQ_OUTPUT_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/fe99f6bb-9115-4d42-a813-a4d0f6c388bf/resourceGroups/practise-res-gp-1/providers/Microsoft.Storage/storageAccounts/rawadlsone"
 		},
 		"containerUri": {
 			"type": "string",
@@ -53,14 +73,29 @@
 					"LS_BLOB_TO_ADLS_OUTPUT_connectionString": {
 						"value": "[parameters('LS_BLOB_TO_ADLS_OUTPUT_connectionString')]"
 					},
+					"LS_MANUAL_FILE_ADLS_TO_PARQ_accountKey": {
+						"value": "[parameters('LS_MANUAL_FILE_ADLS_TO_PARQ_accountKey')]"
+					},
+					"LS_MANUAL_FILE_ADLS_TO_PARQ_OUTPUT_accountKey": {
+						"value": "[parameters('LS_MANUAL_FILE_ADLS_TO_PARQ_OUTPUT_accountKey')]"
+					},
 					"LS_REST_APT_TO_PARQ_accountKey": {
 						"value": "[parameters('LS_REST_APT_TO_PARQ_accountKey')]"
+					},
+					"LS_MANUAL_FILE_ADLS_TO_PARQ_properties_typeProperties_url": {
+						"value": "[parameters('LS_MANUAL_FILE_ADLS_TO_PARQ_properties_typeProperties_url')]"
+					},
+					"LS_MANUAL_FILE_ADLS_TO_PARQ_OUTPUT_properties_typeProperties_url": {
+						"value": "[parameters('LS_MANUAL_FILE_ADLS_TO_PARQ_OUTPUT_properties_typeProperties_url')]"
 					},
 					"LS_REST_API_TO_PARQ_properties_typeProperties_url": {
 						"value": "[parameters('LS_REST_API_TO_PARQ_properties_typeProperties_url')]"
 					},
 					"LS_REST_APT_TO_PARQ_properties_typeProperties_url": {
 						"value": "[parameters('LS_REST_APT_TO_PARQ_properties_typeProperties_url')]"
+					},
+					"EVT_MANUAL_FILE_ADLS_TO_PARQ_OUTPUT_properties_typeProperties_scope": {
+						"value": "[parameters('EVT_MANUAL_FILE_ADLS_TO_PARQ_OUTPUT_properties_typeProperties_scope')]"
 					}
 				}
 			},
