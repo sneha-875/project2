@@ -1,0 +1,24 @@
+{
+	"name": "EVT_MANUAL_FILE_ADLS_TO_PARQ_OUTPUT",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "PL_MANUAL_FILEADLS_TO_PARQ",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/manualfile-payment/blobs/",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/fe99f6bb-9115-4d42-a813-a4d0f6c388bf/resourceGroups/practise-res-gp-1/providers/Microsoft.Storage/storageAccounts/rawadlsone",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
