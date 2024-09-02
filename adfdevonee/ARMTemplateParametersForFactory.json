@@ -1,0 +1,21 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adfdevonee"
+		},
+		"LS_BLOB_TO_ADLS_OUTPUT_connectionString": {
+			"value": ""
+		},
+		"LS_REST_APT_TO_PARQ_accountKey": {
+			"value": ""
+		},
+		"LS_REST_API_TO_PARQ_properties_typeProperties_url": {
+			"value": "https://retoolapi.dev/dyNsBr/data"
+		},
+		"LS_REST_APT_TO_PARQ_properties_typeProperties_url": {
+			"value": "https://siadlslayerfinallayer.dfs.core.windows.net/"
+		}
+	}
+}
