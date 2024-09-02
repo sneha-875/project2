@@ -1,0 +1,19 @@
+{
+	"name": "DS_MANUAL_FILE_ADLS_TO_PARQ_OUTPUT",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_MANUAL_FILE_ADLS_TO_PARQ_OUTPUT",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "payment-output-vision-project"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
