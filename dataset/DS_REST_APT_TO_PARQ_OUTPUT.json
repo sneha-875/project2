@@ -1,0 +1,19 @@
+{
+	"name": "DS_REST_APT_TO_PARQ_OUTPUT",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_REST_APT_TO_PARQ",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "customer-output-vision-project"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
